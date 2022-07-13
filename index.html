@@ -20,9 +20,9 @@
             <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
                 href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
                     class="fa fa-bars"></i></a>
-            <a href="#" class="w3-bar-item w3-button w3-padding-large">Home</a>
-            <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FoxBot Team</a>
-            <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Exchange</a>
+            <a href="#home" class="w3-bar-item w3-button w3-padding-large">Home</a>
+            <a href="#team" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FoxBot Team</a>
+            <a href="#exchange" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Exchange</a>
             <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
             <div class="w3-dropdown-hover w3-hide-small">
                 <button class="w3-padding-large w3-button" title="More">More <i class="fa fa-caret-down"></i></button>
@@ -36,23 +36,18 @@
         </div>
     </div>
 
-    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-        <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-        <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
-        <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
-    </div>
-
     <!-- Page content -->
     <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
-        <!-- Automatic Slideshow Images -->
-        <img src="/img/banner.png" style="width:100%">
+        <div id="home">
+            <img src="/img/banner.png" style="width:100%">
+        </div>
 
         <!-- The Band Section -->
-        <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+        <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="team">
             <h2 class="w3-wide">FoxBot Team</h2>
-            <p class="w3-opacity"><i>We love FoxBot <3</i></p>
+            <p class="w3-opacity"><i>We love FoxBot <3 </i>
+            </p>
             <p class="w3-justify" </p>
             <div class="w3-row w3-padding-32">
                 <div class="w3-third">
@@ -71,7 +66,7 @@
         </div>
 
         <!-- The Tour Section -->
-        <div class="w3-black" id="tour">
+        <div class="w3-black" id="exchange">
             <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
                 <h2 class="w3-wide w3-center">EXCHANGE COINS</h2>
                 <p class="w3-opacity w3-center"><i>Exchange your FC to Discord Bot currency</i></p><br>
@@ -120,13 +115,13 @@
             </div>
         </div>
 
-        <!-- Ticket Modal -->
         <div id="exchangeModal" class="w3-modal">
             <div class="w3-modal-content w3-animate-top w3-card-4">
                 <header class="w3-container w3-teal w3-center w3-padding-32">
                     <span onclick="document.getElementById('exchangeModal').style.display='none'"
                         class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
-                    <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>FoxBot Online Exchanger - Out of stock</h2>
+                    <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>FoxBot Online Exchanger - Out of
+                        stock</h2>
                 </header>
                 <div class="w3-container">
                     <p><label><i class="fa fa-shopping-cart"></i> Type Your Exchange Currency | Online Exchange Free:
@@ -166,8 +161,7 @@
                         </div>
                         <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
                         <div class="btn-send">
-                            <button id="button" class="button w3-button w3-section w3-right"
-                                type="submit">SEND</button>
+                            <button id="button" class="button w3-button w3-section w3-right" type="submit">SEND</button>
                         </div>
                     </form>
                 </div>
